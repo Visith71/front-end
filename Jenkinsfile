@@ -15,7 +15,7 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'cd front-end_main && npm run serve'
+        sh 'npm run serve'
       }
     }
 

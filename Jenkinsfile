@@ -9,12 +9,6 @@ pipeline {
 
     stage('check_pwd') {
       steps {
-        sh 'pwd'
-      }
-    }
-
-    stage('build') {
-      steps {
         sh 'node --version'
       }
     }

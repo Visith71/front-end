@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image '48d111aa476c'
-    }
-
-  }
+  agent none
   stages {
     stage('echo') {
       steps {

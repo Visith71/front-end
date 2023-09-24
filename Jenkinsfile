@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'appdynamics/nodejs-agent'
+      image 'paketobuildpacks/nodejs'
     }
 
   }

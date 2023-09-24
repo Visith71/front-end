@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'appdynamics/nodejs-agent'
+    }
+
+  }
   stages {
     stage('echo') {
       steps {

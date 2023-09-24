@@ -9,7 +9,7 @@ pipeline {
 
     stage('check_pwd') {
       steps {
-        sh 'npm --version'
+        sh 'node --version'
       }
     }
 

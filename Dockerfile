@@ -1,10 +1,11 @@
 # build stage
 FROM node:lts-alpine as build-stage
 WORKDIR /app
-# COPY package*.json ./
-# RUN npm install
+COPY package*.json ./
+RUN npm install
 COPY node_modules ./
-COPY dist ./
+RUN npm run build
+#COPY dist ./
 COPY . .
 # RUN npm run serve
 

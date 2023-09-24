@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'paketobuildpacks/nodejs'
+      image '48d111aa476c'
     }
 
   }
